@@ -1,0 +1,16 @@
+2021-01-25 02:13:57.377 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test run started at: 2021-01-25T02:13:57.374686200
+2021-01-25 02:13:57.590 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case started: Retreive weather details for "Nottingham" and for any day
+2021-01-25 02:14:01.172 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case Retreive weather details for "Nottingham" and for any day finished
+2021-01-25 02:14:01.173 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Pass test Retreive weather details for "Nottingham" and for any day
+2021-01-25 02:14:01.229 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case started: Retreive weather details for "London" and for any day
+2021-01-25 02:14:02.178 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case Retreive weather details for "London" and for any day finished
+2021-01-25 02:14:02.179 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Pass test Retreive weather details for "London" and for any day
+2021-01-25 02:14:02.205 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case started: Retreive weather details for "Oxford" and for any day
+2021-01-25 02:14:03.048 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case Retreive weather details for "Oxford" and for any day finished
+2021-01-25 02:14:03.048 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Pass test Retreive weather details for "Oxford" and for any day
+2021-01-25 02:14:03.075 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case started: Verify the duplicacy of PlaceID for "Birmingham"
+2021-01-25 02:14:03.560 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case Verify the duplicacy of PlaceID for "Birmingham" finished
+2021-01-25 02:14:03.560 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Failed test Verify the duplicacy of PlaceID for "Birmingham"
+2021-01-25 02:14:03.597 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case started: Verify the duplicacy of PlaceID for "Nottingham"
+2021-01-25 02:14:03.803 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Test case Verify the duplicacy of PlaceID for "Nottingham" finished
+2021-01-25 02:14:03.804 [INFO ] [TestNG-test=Surefire test-1] ListenerPlugin - Pass test Verify the duplicacy of PlaceID for "Nottingham"

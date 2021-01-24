@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 25, 2021 02:13:56 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">GetWeatherDetails.feature</p>
+            <p class="text-sm">
+              <span>02:13:57 AM</span> / <span>30:05:452</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GetWeatherDetails.feature</h5>
+<span class='badge badge-success'>01.25.2021 02:13:57</span>
+<span class='badge badge-danger'>01.25.2021 02:14:03</span>
+<span class='badge badge-default'>30:05:452</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="2">Retreive weather details for "Nottingham" and for any day</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>30:03:577</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:13:59 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/search/?query=Nottingham
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:13:59 AM</td>
+        <td>
+          <-- Response 200 [{"title":"Nottingham","location_type":"City","woeid":30720,"latt_long":"52.949219,-1.143920"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:00 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/location/30720/2021/1/26?query=Nottingham
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:01 AM</td>
+        <td>
+          <-- Response 200 [{"id":6077284738924544,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-24T20:25:02.253850Z","applicable_date":"2021-01-26","min_temp":-1.37,"max_temp":3.87,"the_temp":3.0300000000000002,"wind_speed":5.6261687704260455,"wind_direction":206.15211288861002,"air_pressure":1015.0,"humidity":91,"visibility":6.76362542750338,"predictability":77},{"id":5071650543370240,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-24T17:25:03.302596Z","applicable_date":"2021-01-26","min_temp":-0.825,"max_temp":3.755,"the_temp":2.9850000000000003,"wind_speed":5.494148003759378,"wind_direction":207.48909174321847,"air_pressure":1015.0,"humidity":90,"visibility":7.511134971764893,"predictability":77},{"id":5539836338372608,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SSW","created":"2021-01-24T14:25:01.974926Z","applicable_date":"2021-01-26","min_temp":-0.7350000000000001,"max_temp":3.33,"the_temp":2.94,"wind_speed":5.49994719556457,"wind_direction":212.08019037151968,"air_pressure":1015.5,"humidity":88,"visibility":7.742285055277181,"predictability":75},{"id":5174031104868352,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T11:25:01.661654Z","applicable_date":"2021-01-26","min_temp":-0.49500000000000005,"max_temp":3.45,"the_temp":2.93,"wind_speed":5.3016194288979035,"wind_direction":216.4947659580125,"air_pressure":1015.5,"humidity":87,"visibility":8.185944086534638,"predictability":75},{"id":6705531482800128,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T08:25:02.180494Z","applicable_date":"2021-01-26","min_temp":-0.57,"max_temp":3.1799999999999997,"the_temp":2.395,"wind_speed":5.269722248521965,"wind_direction":226.32509590113312,"air_pressure":1015.5,"humidity":91,"visibility":8.934385687584506,"predictability":75},{"id":4551350504390656,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T05:25:02.180242Z","applicable_date":"2021-01-26","min_temp":-0.57,"max_temp":3.1799999999999997,"the_temp":2.3,"wind_speed":5.180245048521965,"wind_direction":226.32509590113312,"air_pressure":1015.5,"humidity":91,"visibility":9.981396146504414,"predictability":75},{"id":6047948149358592,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T02:25:01.165468Z","applicable_date":"2021-01-26","min_temp":-0.47500000000000003,"max_temp":3.6750000000000003,"the_temp":2.865,"wind_speed":5.251603912754845,"wind_direction":222.00611516180987,"air_pressure":1015.0,"humidity":88,"visibility":10.277168834009384,"predictability":75},{"id":6381941449293824,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T23:25:04.271895Z","applicable_date":"2021-01-26","min_temp":-0.47500000000000003,"max_temp":3.6750000000000003,"the_temp":2.9850000000000003,"wind_speed":4.975715879421512,"wind_direction":214.4961482433999,"air_pressure":1015.0,"humidity":88,"visibility":8.179109003420027,"predictability":75},{"id":5956189931175936,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T20:25:04.114007Z","applicable_date":"2021-01-26","min_temp":-0.565,"max_temp":4.515000000000001,"the_temp":3.125,"wind_speed":4.9280774213499825,"wind_direction":214.16548609066598,"air_pressure":1014.0,"humidity":85,"visibility":8.179109003420027,"predictability":75},{"id":4923748512694272,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T17:25:06.858248Z","applicable_date":"2021-01-26","min_temp":-0.425,"max_temp":5.095,"the_temp":3.245,"wind_speed":4.933524221349983,"wind_direction":220.34729194840114,"air_pressure":1013.5,"humidity":83,"visibility":11.904850672075082,"predictability":75},{"id":6677562521550848,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T14:25:05.156785Z","applicable_date":"2021-01-26","min_temp":-0.37000000000000005,"max_temp":4.705,"the_temp":3.5700000000000003,"wind_speed":4.962107443007503,"wind_direction":219.67807002124104,"air_pressure":1013.0,"humidity":82,"visibility":12.617563429571302,"predictability":75},{"id":5044094922391552,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T11:25:05.549977Z","applicable_date":"2021-01-26","min_temp":-0.5700000000000001,"max_temp":5.175,"the_temp":3.5700000000000003,"wind_speed":5.568948376340836,"wind_direction":220.672307968176,"air_pressure":1013.0,"humidity":82,"visibility":11.858869203849519,"predictability":75},{"id":4622391343841280,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T08:25:04.057628Z","applicable_date":"2021-01-26","min_temp":-0.385,"max_temp":4.985,"the_temp":3.3449999999999998,"wind_speed":5.904902606193166,"wind_direction":229.2570030929533,"air_pressure":1012.5,"humidity":84,"visibility":11.351519625387734,"predictability":75},{"id":4868231715094528,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T05:25:04.255111Z","applicable_date":"2021-01-26","min_temp":-0.385,"max_temp":4.985,"the_temp":3.505,"wind_speed":6.158421339526498,"wind_direction":229.2570030929533,"air_pressure":1012.5,"humidity":84,"visibility":12.620048914340252,"predictability":75},{"id":5621957002264576,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T02:25:04.387773Z","applicable_date":"2021-01-26","min_temp":-0.1,"max_temp":5.54,"the_temp":4.055,"wind_speed":6.183276187215992,"wind_direction":230.86355414507364,"air_pressure":1011.5,"humidity":83,"visibility":12.620048914340252,"predictability":75},{"id":5951054576353280,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T23:25:07.964993Z","applicable_date":"2021-01-26","min_temp":-0.1,"max_temp":5.54,"the_temp":4.095,"wind_speed":6.1236247205493255,"wind_direction":223.12544526082837,"air_pressure":1010.5,"humidity":83,"visibility":9.709856935496699,"predictability":77},{"id":4919711377653760,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T20:25:08.566125Z","applicable_date":"2021-01-26","min_temp":-0.425,"max_temp":5.585,"the_temp":4.140000000000001,"wind_speed":6.191975551695432,"wind_direction":222.19994908223794,"air_pressure":1011.0,"humidity":83,"visibility":9.709856935496699,"predictability":77},{"id":5076943906013184,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T17:25:09.469914Z","applicable_date":"2021-01-26","min_temp":-0.99,"max_temp":4.355,"the_temp":4.32,"wind_speed":5.906981118362098,"wind_direction":224.67697385174878,"air_pressure":1011.0,"humidity":82,"visibility":10.750032311301997,"predictability":77},{"id":6585019716861952,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SSW","created":"2021-01-22T14:25:09.453305Z","applicable_date":"2021-01-26","min_temp":-0.685,"max_temp":6.234999999999999,"the_temp":3.8449999999999998,"wind_speed":6.083036499231156,"wind_direction":204.97932471963094,"air_pressure":1009.5,"humidity":87,"visibility":12.534921061003738,"predictability":75},{"id":6169541643075584,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-22T11:25:08.166630Z","applicable_date":"2021-01-26","min_temp":-0.47,"max_temp":7.484999999999999,"the_temp":3.8150000000000004,"wind_speed":6.3432107658978225,"wind_direction":195.71012300695617,"air_pressure":1009.0,"humidity":87,"visibility":11.08681549749463,"predictability":77},{"id":6694024778874880,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"S","created":"2021-01-22T08:25:07.261265Z","applicable_date":"2021-01-26","min_temp":-0.47,"max_temp":7.484999999999999,"the_temp":3.8950000000000005,"wind_speed":6.663837399231157,"wind_direction":187.761243907035,"air_pressure":1009.0,"humidity":88,"visibility":9.815490038177046,"predictability":77},{"id":5137809682726912,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"S","created":"2021-01-22T05:25:07.477157Z","applicable_date":"2021-01-26","min_temp":-0.47,"max_temp":7.484999999999999,"the_temp":3.675,"wind_speed":6.64892453256449,"wind_direction":187.761243907035,"air_pressure":1009.0,"humidity":88,"visibility":9.985745744850075,"predictability":77},{"id":6267376099131392,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"S","created":"2021-01-22T02:25:08.566533Z","applicable_date":"2021-01-26","min_temp":-0.505,"max_temp":7.46,"the_temp":3.675,"wind_speed":6.64892453256449,"wind_direction":187.761243907035,"air_pressure":1009.0,"humidity":88,"visibility":9.985745744850075,"predictability":77},{"id":5380471711072256,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-21T23:25:11.857038Z","applicable_date":"2021-01-26","min_temp":-0.505,"max_temp":7.46,"the_temp":2.93,"wind_speed":6.148236498846735,"wind_direction":192.0,"air_pressure":1007.0,"humidity":88,"visibility":9.084446830509822,"predictability":77},{"id":6235591109771264,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-21T20:25:10.670189Z","applicable_date":"2021-01-26","min_temp":-0.505,"max_temp":7.46,"the_temp":2.93,"wind_speed":6.148236498846735,"wind_direction":192.0,"air_pressure":1007.0,"humidity":88,"visibility":9.084446830509822,"predictability":77},{"id":5999055399288832,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-21T17:25:10.362366Z","applicable_date":"2021-01-26","min_temp":-0.2,"max_temp":6.76,"the_temp":2.93,"wind_speed":5.343236498846735,"wind_direction":203.0,"air_pressure":1007.0,"humidity":86,"visibility":7.82865565099817,"predictability":77},{"id":6189389878132736,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"S","created":"2021-01-21T14:25:10.765490Z","applicable_date":"2021-01-26","min_temp":-0.3,"max_temp":6.07,"the_temp":3.37,"wind_speed":5.020123478883321,"wind_direction":184.49999999999997,"air_pressure":997.0,"humidity":87,"visibility":7.82865565099817,"predictability":77},{"id":5356689671847936,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSE","created":"2021-01-21T11:25:10.110806Z","applicable_date":"2021-01-26","min_temp":-0.475,"max_temp":6.220000000000001,"the_temp":3.37,"wind_speed":5.315123478883321,"wind_direction":147.00000000000003,"air_pressure":997.0,"humidity":95,"visibility":5.396608804581246,"predictability":77},{"id":4890154704568320,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSE","created":"2021-01-21T08:25:10.006834Z","applicable_date":"2021-01-26","min_temp":-0.605,"max_temp":5.365,"the_temp":1.73,"wind_speed":5.979990654577268,"wind_direction":147.00000000000003,"air_pressure":996.0,"humidity":94,"visibility":5.396608804581246,"predictability":77},{"id":5988279057907712,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSE","created":"2021-01-21T05:25:10.579253Z","applicable_date":"2021-01-26","min_temp":-0.605,"max_temp":5.365,"the_temp":1.73,"wind_speed":5.979990654577268,"wind_direction":147.00000000000003,"air_pressure":996.0,"humidity":94,"visibility":5.396608804581246,"predictability":77},{"id":6611792261283840,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WNW","created":"2021-01-21T02:25:10.762397Z","applicable_date":"2021-01-26","min_temp":1.46,"max_temp":5.265000000000001,"the_temp":3.76,"wind_speed":4.405262467191601,"wind_direction":285.0,"air_pressure":990.0,"humidity":95,"visibility":5.092758291577189,"predictability":77},{"id":5611181382303744,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WNW","created":"2021-01-20T23:25:13.288975Z","applicable_date":"2021-01-26","min_temp":1.46,"max_temp":5.265000000000001,"the_temp":3.76,"wind_speed":4.405262467191601,"wind_direction":285.0,"air_pressure":990.0,"humidity":95,"visibility":5.092758291577189,"predictability":77},{"id":5934242782511104,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T20:25:13.270993Z","applicable_date":"2021-01-26","min_temp":1.17,"max_temp":8.15,"the_temp":7.75,"wind_speed":4.986244531933508,"wind_direction":212.99999999999997,"air_pressure":996.0,"humidity":95,"visibility":5.092758291577189,"predictability":77},{"id":4649347883991040,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T17:25:14.366458Z","applicable_date":"2021-01-26","min_temp":0.24,"max_temp":7.805,"the_temp":7.75,"wind_speed":5.041244531933509,"wind_direction":212.99999999999997,"air_pressure":996.0,"humidity":95,"visibility":7.5080281158037065,"predictability":77},{"id":5018506849419264,"weather_state_name":"Hail","weather_state_abbr":"h","wind_direction_compass":"SSW","created":"2021-01-20T14:25:14.574847Z","applicable_date":"2021-01-26","min_temp":-0.685,"max_temp":3.91,"the_temp":2.39,"wind_speed":4.410552771812615,"wind_direction":210.0,"air_pressure":1015.0,"humidity":91,"visibility":7.5080281158037065,"predictability":82},{"id":5864818796920832,"weather_state_name":"Hail","weather_state_abbr":"h","wind_direction_compass":"SW","created":"2021-01-20T11:25:13.773419Z","applicable_date":"2021-01-26","min_temp":-0.04999999999999999,"max_temp":3.75,"the_temp":2.39,"wind_speed":5.075552771812614,"wind_direction":217.49999999999997,"air_pressure":1015.0,"humidity":90,"visibility":8.902385071184284,"predictability":82},{"id":6007033569476608,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-20T08:25:12.877367Z","applicable_date":"2021-01-26","min_temp":0.16999999999999998,"max_temp":4.305,"the_temp":3.15,"wind_speed":5.249536705639067,"wind_direction":216.5,"air_pressure":1017.0,"humidity":85,"visibility":8.902385071184284,"predictability":77},{"id":4785660230631424,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-20T05:25:13.487463Z","applicable_date":"2021-01-26","min_temp":0.16999999999999998,"max_temp":4.305,"the_temp":3.15,"wind_speed":5.249536705639067,"wind_direction":216.5,"air_pressure":1017.0,"humidity":85,"visibility":8.902385071184284,"predictability":77},{"id":6599047751139328,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T02:25:13.507324Z","applicable_date":"2021-01-26","min_temp":0.91,"max_temp":8.475000000000001,"the_temp":5.8,"wind_speed":7.845972719319176,"wind_direction":203.0,"air_pressure":1006.0,"humidity":92,"visibility":9.999726596675416,"predictability":77},{"id":6601793929740288,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-19T23:25:15.856869Z","applicable_date":"2021-01-26","min_temp":0.91,"max_temp":8.475000000000001,"the_temp":5.8,"wind_speed":7.845972719319176,"wind_direction":203.0,"air_pressure":1006.0,"humidity":92,"visibility":9.999726596675416,"predictability":77},{"id":5650500063068160,"weather_state_name":"Hail","weather_state_abbr":"h","wind_direction_compass":"S","created":"2021-01-19T20:25:16.189908Z","applicable_date":"2021-01-26","min_temp":0.34,"max_temp":6.805000000000001,"the_temp":2.89,"wind_speed":6.6249783265728155,"wind_direction":188.99999999999997,"air_pressure":1009.0,"humidity":86,"visibility":9.999726596675416,"predictability":82},{"id":5879200041926656,"weather_state_name":"Hail","weather_state_abbr":"h","wind_direction_compass":"S","created":"2021-01-19T17:25:16.764404Z","applicable_date":"2021-01-26","min_temp":0.455,"max_temp":5.905,"the_temp":2.89,"wind_speed":6.914978326572815,"wind_direction":186.49999999999997,"air_pressure":1009.0,"humidity":87,"visibility":9.172681539807524,"predictability":82},{"id":6222084108713984,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-19T14:25:16.762660Z","applicable_date":"2021-01-26","min_temp":1.895,"max_temp":8.094999999999999,"the_temp":9.61,"wind_speed":8.108011015668495,"wind_direction":233.0,"air_pressure":997.0,"humidity":83,"visibility":9.172681539807524,"predictability":77},{"id":4682303453265920,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T11:25:16.585481Z","applicable_date":"2021-01-26","min_temp":1.7950000000000002,"max_temp":9.149999999999999,"the_temp":9.61,"wind_speed":6.273011015668496,"wind_direction":256.5,"air_pressure":997.0,"humidity":83,"visibility":9.475910681619343,"predictability":77},{"id":6142079739625472,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T08:25:16.694736Z","applicable_date":"2021-01-26","min_temp":0.77,"max_temp":8.684999999999999,"the_temp":8.12,"wind_speed":4.974345223892468,"wind_direction":252.5,"air_pressure":1001.0,"humidity":95,"visibility":9.475910681619343,"predictability":77},{"id":5046339630006272,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T05:25:18.411106Z","applicable_date":"2021-01-26","min_temp":0.77,"max_temp":8.684999999999999,"the_temp":8.12,"wind_speed":4.974345223892468,"wind_direction":252.5,"air_pressure":1001.0,"humidity":95,"visibility":9.475910681619343,"predictability":77},{"id":4873914007158784,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T02:25:17.563029Z","applicable_date":"2021-01-26","min_temp":0.33,"max_temp":8.63,"the_temp":8.63,"wind_speed":3.566670643442297,"wind_direction":248.0,"air_pressure":999.0,"humidity":95,"visibility":null,"predictability":77},{"id":4878754250752000,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-18T23:25:20.048380Z","applicable_date":"2021-01-26","min_temp":0.33,"max_temp":8.63,"the_temp":8.63,"wind_speed":3.566670643442297,"wind_direction":248.0,"air_pressure":999.0,"humidity":95,"visibility":null,"predictability":77},{"id":5807121900765184,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"W","created":"2021-01-18T20:25:18.869516Z","applicable_date":"2021-01-26","min_temp":2.76,"max_temp":10.48,"the_temp":10.48,"wind_speed":3.4734649646066966,"wind_direction":274.0,"air_pressure":1002.0,"humidity":83,"visibility":null,"predictability":77},{"id":5481746368823296,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"W","created":"2021-01-18T17:25:19.278865Z","applicable_date":"2021-01-26","min_temp":2.76,"max_temp":10.48,"the_temp":10.48,"wind_speed":3.4734649646066966,"wind_direction":274.0,"air_pressure":1002.0,"humidity":83,"visibility":null,"predictability":77},{"id":5575591941111808,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSE","created":"2021-01-18T14:25:19.675776Z","applicable_date":"2021-01-26","min_temp":0.11,"max_temp":6.94,"the_temp":2.92,"wind_speed":4.374453193350831,"wind_direction":165.0,"air_pressure":1002.0,"humidity":96,"visibility":null,"predictability":77},{"id":6282359159652352,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSE","created":"2021-01-18T11:25:19.376019Z","applicable_date":"2021-01-26","min_temp":0.11,"max_temp":6.94,"the_temp":2.92,"wind_speed":4.374453193350831,"wind_direction":165.0,"air_pressure":1002.0,"humidity":96,"visibility":null,"predictability":77},{"id":6495846397902848,"weather_state_name":"Snow","weather_state_abbr":"sn","wind_direction_compass":"WSW","created":"2021-01-18T08:25:18.778761Z","applicable_date":"2021-01-26","min_temp":1.4,"max_temp":7.11,"the_temp":7.11,"wind_speed":4.119691004533524,"wind_direction":239.99999999999994,"air_pressure":993.0,"humidity":88,"visibility":null,"predictability":90},{"id":5173678649114624,"weather_state_name":"Snow","weather_state_abbr":"sn","wind_direction_compass":"WSW","created":"2021-01-18T05:25:19.475175Z","applicable_date":"2021-01-26","min_temp":1.4,"max_temp":7.11,"the_temp":7.11,"wind_speed":4.119691004533524,"wind_direction":239.99999999999994,"air_pressure":993.0,"humidity":88,"visibility":null,"predictability":90},{"id":4530160125607936,"weather_state_name":"Snow","weather_state_abbr":"sn","wind_direction_compass":"S","created":"2021-01-18T02:25:19.888920Z","applicable_date":"2021-01-26","min_temp":-0.25,"max_temp":4.22,"the_temp":3.67,"wind_speed":1.2551698083194145,"wind_direction":171.0,"air_pressure":1013.0,"humidity":77,"visibility":null,"predictability":90}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:14:01 AM</td>
+        <td>
+          PASSED: Retreive weather details for "Nottingham" and for any day
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="3">Retreive weather details for "London" and for any day</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>30:00:950</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:01 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/search/?query=London
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:01 AM</td>
+        <td>
+          <-- Response 200 [{"title":"London","location_type":"City","woeid":44418,"latt_long":"51.506321,-0.12714"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/location/44418/2021/1/27?query=London
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          <-- Response 200 [{"id":4982456169005056,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T18:20:09.754023Z","applicable_date":"2021-01-27","min_temp":5.43,"max_temp":9.95,"the_temp":8.09,"wind_speed":4.956745584935974,"wind_direction":232.6290312729494,"air_pressure":1013.0,"humidity":88,"visibility":10.0311058418834,"predictability":75},{"id":4975129877544960,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T15:20:05.272633Z","applicable_date":"2021-01-27","min_temp":5.43,"max_temp":9.95,"the_temp":8.065,"wind_speed":4.807616918269307,"wind_direction":232.6290312729494,"air_pressure":1013.5,"humidity":88,"visibility":10.609602421856358,"predictability":75},{"id":6404300730269696,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T12:20:02.442155Z","applicable_date":"2021-01-27","min_temp":4.805,"max_temp":10.645,"the_temp":7.65,"wind_speed":4.214000851263289,"wind_direction":227.66568781397157,"air_pressure":1014.5,"humidity":89,"visibility":10.38311262228585,"predictability":75},{"id":5909151449350144,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T09:20:02.266792Z","applicable_date":"2021-01-27","min_temp":4.8149999999999995,"max_temp":10.719999999999999,"the_temp":7.55,"wind_speed":5.124023117929956,"wind_direction":221.36215920470232,"air_pressure":1014.0,"humidity":87,"visibility":10.552436272170524,"predictability":75},{"id":6270904330878976,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SSW","created":"2021-01-24T06:20:02.461179Z","applicable_date":"2021-01-27","min_temp":4.84,"max_temp":10.825,"the_temp":7.52,"wind_speed":5.334047440820275,"wind_direction":203.16625541515373,"air_pressure":1014.5,"humidity":89,"visibility":10.34148075240595,"predictability":75},{"id":5138034447089664,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SSW","created":"2021-01-24T03:20:02.541872Z","applicable_date":"2021-01-27","min_temp":5.115,"max_temp":11.015,"the_temp":7.415,"wind_speed":5.34904187415361,"wind_direction":201.29934710031176,"air_pressure":1015.0,"humidity":89,"visibility":11.266391772051222,"predictability":75},{"id":5035297537523712,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T00:20:01.090748Z","applicable_date":"2021-01-27","min_temp":5.37,"max_temp":11.415,"the_temp":7.69,"wind_speed":5.19742797440017,"wind_direction":213.7713612465226,"air_pressure":1014.5,"humidity":87,"visibility":11.100796349319971,"predictability":75},{"id":6314655099125760,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T21:20:01.676986Z","applicable_date":"2021-01-27","min_temp":5.37,"max_temp":11.415,"the_temp":8.13,"wind_speed":6.040004941066837,"wind_direction":220.8790376274046,"air_pressure":1014.0,"humidity":87,"visibility":10.152583909965799,"predictability":75},{"id":6612598372958208,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T18:20:01.460641Z","applicable_date":"2021-01-27","min_temp":5.23,"max_temp":11.515,"the_temp":8.75,"wind_speed":5.994925460937459,"wind_direction":224.6670094218673,"air_pressure":1012.0,"humidity":90,"visibility":10.298606140141572,"predictability":75},{"id":4988602653081600,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T15:20:03.769208Z","applicable_date":"2021-01-27","min_temp":5.23,"max_temp":11.515,"the_temp":8.785,"wind_speed":6.009838327604125,"wind_direction":217.1919818756517,"air_pressure":1012.0,"humidity":90,"visibility":10.638496182295395,"predictability":75},{"id":6098863778693120,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SSW","created":"2021-01-23T12:20:02.471939Z","applicable_date":"2021-01-27","min_temp":4.635,"max_temp":11.64,"the_temp":7.8950000000000005,"wind_speed":5.686311521596544,"wind_direction":200.34729284045366,"air_pressure":1011.5,"humidity":90,"visibility":10.192973037461226,"predictability":75},{"id":5458426659340288,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T09:20:02.858576Z","applicable_date":"2021-01-27","min_temp":5.24,"max_temp":11.850000000000001,"the_temp":7.935,"wind_speed":6.088076454929876,"wind_direction":217.72551876576998,"air_pressure":1010.5,"humidity":89,"visibility":10.249207130358705,"predictability":75},{"id":5131979616944128,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T06:20:01.967385Z","applicable_date":"2021-01-27","min_temp":4.9399999999999995,"max_temp":11.725000000000001,"the_temp":8.615,"wind_speed":6.4157452112145075,"wind_direction":220.68162730584507,"air_pressure":1010.5,"humidity":89,"visibility":10.158176250695934,"predictability":75},{"id":6214911597215744,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-23T03:20:02.873756Z","applicable_date":"2021-01-27","min_temp":4.984999999999999,"max_temp":11.754999999999999,"the_temp":8.54,"wind_speed":6.348637311214507,"wind_direction":220.68162730584507,"air_pressure":1011.0,"humidity":88,"visibility":10.237401077706195,"predictability":75},{"id":5488957300146176,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-23T00:20:01.366817Z","applicable_date":"2021-01-27","min_temp":4.775,"max_temp":11.305,"the_temp":6.23,"wind_speed":5.10874612264376,"wind_direction":206.5,"air_pressure":1013.0,"humidity":84,"visibility":9.679720432673188,"predictability":77},{"id":6629688718917632,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-22T21:20:05.148642Z","applicable_date":"2021-01-27","min_temp":4.775,"max_temp":11.305,"the_temp":6.23,"wind_speed":5.10874612264376,"wind_direction":206.5,"air_pressure":1013.0,"humidity":84,"visibility":9.679720432673188,"predictability":77},{"id":4573050759544832,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-22T18:20:05.166833Z","applicable_date":"2021-01-27","min_temp":4.605,"max_temp":10.92,"the_temp":6.59,"wind_speed":5.492683727034121,"wind_direction":197.0,"air_pressure":1015.0,"humidity":85,"visibility":9.679720432673188,"predictability":77},{"id":5349278118576128,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-22T15:20:06.756839Z","applicable_date":"2021-01-27","min_temp":4.605,"max_temp":10.92,"the_temp":6.59,"wind_speed":5.492683727034121,"wind_direction":197.0,"air_pressure":1015.0,"humidity":85,"visibility":9.679720432673188,"predictability":77},{"id":6613196044500992,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T12:20:05.980695Z","applicable_date":"2021-01-27","min_temp":5.53,"max_temp":11.68,"the_temp":8.33,"wind_speed":5.806476179113975,"wind_direction":227.99999999999997,"air_pressure":1015.0,"humidity":81,"visibility":9.679720432673188,"predictability":77},{"id":6690683378204672,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T09:20:04.768028Z","applicable_date":"2021-01-27","min_temp":5.41,"max_temp":11.82,"the_temp":8.33,"wind_speed":5.806476179113975,"wind_direction":227.99999999999997,"air_pressure":1015.0,"humidity":80,"visibility":9.679720432673188,"predictability":77},{"id":5614260420870144,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T06:20:04.763488Z","applicable_date":"2021-01-27","min_temp":5.41,"max_temp":11.82,"the_temp":8.33,"wind_speed":5.806476179113975,"wind_direction":227.99999999999997,"air_pressure":1015.0,"humidity":80,"visibility":9.679720432673188,"predictability":77},{"id":6387966617321472,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T03:20:04.749143Z","applicable_date":"2021-01-27","min_temp":5.41,"max_temp":11.695,"the_temp":8.33,"wind_speed":5.806476179113975,"wind_direction":227.99999999999997,"air_pressure":1015.0,"humidity":80,"visibility":9.679720432673188,"predictability":77},{"id":5788463002550272,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T00:20:05.686039Z","applicable_date":"2021-01-27","min_temp":5.41,"max_temp":11.695,"the_temp":8.33,"wind_speed":5.806476179113975,"wind_direction":227.99999999999997,"air_pressure":1015.0,"humidity":80,"visibility":9.679720432673188,"predictability":77},{"id":5579801143279616,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-21T21:20:08.091601Z","applicable_date":"2021-01-27","min_temp":5.41,"max_temp":11.695,"the_temp":8.33,"wind_speed":5.806476179113975,"wind_direction":227.99999999999997,"air_pressure":1015.0,"humidity":80,"visibility":9.679720432673188,"predictability":77},{"id":5975613199351808,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-21T18:20:07.850906Z","applicable_date":"2021-01-27","min_temp":3.605,"max_temp":10.285,"the_temp":8.33,"wind_speed":4.831476179113974,"wind_direction":221.99999999999997,"air_pressure":1015.0,"humidity":78,"visibility":9.567252246878232,"predictability":77},{"id":6192569445777408,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-21T15:20:07.359759Z","applicable_date":"2021-01-27","min_temp":3.605,"max_temp":10.285,"the_temp":8.33,"wind_speed":4.831476179113974,"wind_direction":221.99999999999997,"air_pressure":1015.0,"humidity":78,"visibility":9.567252246878232,"predictability":77},{"id":6359489054769152,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-21T12:20:08.752399Z","applicable_date":"2021-01-27","min_temp":4.175,"max_temp":10.045,"the_temp":8.21,"wind_speed":5.058276664280601,"wind_direction":223.5,"air_pressure":1010.0,"humidity":75,"visibility":9.567252246878232,"predictability":77},{"id":4837068019597312,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSE","created":"2021-01-21T09:20:07.572027Z","applicable_date":"2021-01-27","min_temp":5.27,"max_temp":8.725,"the_temp":8.21,"wind_speed":4.743276664280601,"wind_direction":154.5,"air_pressure":1010.0,"humidity":83,"visibility":9.534940944881889,"predictability":77},{"id":5281996566691840,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"ESE","created":"2021-01-21T06:20:07.562333Z","applicable_date":"2021-01-27","min_temp":4.2,"max_temp":6.83,"the_temp":5.23,"wind_speed":4.323851109520401,"wind_direction":109.00000000000001,"air_pressure":1014.0,"humidity":81,"visibility":9.534940944881889,"predictability":77},{"id":5130236866854912,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"S","created":"2021-01-21T03:20:08.260938Z","applicable_date":"2021-01-27","min_temp":4.365,"max_temp":7.725,"the_temp":5.23,"wind_speed":3.3188511095204007,"wind_direction":169.50000000000003,"air_pressure":1014.0,"humidity":83,"visibility":9.999726596675416,"predictability":77},{"id":6031592192475136,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-21T00:20:08.124558Z","applicable_date":"2021-01-27","min_temp":4.655,"max_temp":9.36,"the_temp":8.61,"wind_speed":3.610895569871948,"wind_direction":208.49999999999997,"air_pressure":1009.0,"humidity":89,"visibility":9.999726596675416,"predictability":77},{"id":6241166732296192,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T21:20:10.376375Z","applicable_date":"2021-01-27","min_temp":4.655,"max_temp":9.36,"the_temp":8.61,"wind_speed":3.610895569871948,"wind_direction":208.49999999999997,"air_pressure":1009.0,"humidity":89,"visibility":9.999726596675416,"predictability":77},{"id":6095471425617920,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"WSW","created":"2021-01-20T18:20:10.954718Z","applicable_date":"2021-01-27","min_temp":6.475,"max_temp":11.399999999999999,"the_temp":11.87,"wind_speed":6.317906028791855,"wind_direction":248.0,"air_pressure":1010.0,"humidity":83,"visibility":9.32056788356001,"predictability":73},{"id":5115834214121472,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"WSW","created":"2021-01-20T15:20:10.866627Z","applicable_date":"2021-01-27","min_temp":6.475,"max_temp":11.399999999999999,"the_temp":11.87,"wind_speed":6.317906028791855,"wind_direction":248.0,"air_pressure":1010.0,"humidity":83,"visibility":9.32056788356001,"predictability":73},{"id":6302179611639808,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-20T12:20:11.583852Z","applicable_date":"2021-01-27","min_temp":4.3500000000000005,"max_temp":9.205,"the_temp":5.5,"wind_speed":4.565639266682574,"wind_direction":230.0,"air_pressure":1015.0,"humidity":87,"visibility":9.32056788356001,"predictability":77},{"id":5815723025760256,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-20T09:20:10.759977Z","applicable_date":"2021-01-27","min_temp":4.665,"max_temp":8.425,"the_temp":5.5,"wind_speed":2.835639266682574,"wind_direction":242.5,"air_pressure":1015.0,"humidity":88,"visibility":9.999726596675416,"predictability":77},{"id":5113157912625152,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"W","created":"2021-01-20T06:20:10.267361Z","applicable_date":"2021-01-27","min_temp":5.115,"max_temp":7.984999999999999,"the_temp":6.04,"wind_speed":2.677189612662054,"wind_direction":259.5,"air_pressure":1016.0,"humidity":88,"visibility":9.999726596675416,"predictability":73},{"id":4978099797098496,"weather_state_name":"HeavyCloud","weather_state_abbr":"hc","wind_direction_compass":"W","created":"2021-01-20T03:20:12.443129Z","applicable_date":"2021-01-27","min_temp":3.87,"max_temp":6.6,"the_temp":6.04,"wind_speed":0.5343792253241072,"wind_direction":268.0,"air_pressure":1016.0,"humidity":80,"visibility":null,"predictability":71},{"id":5174080681541632,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-20T00:20:10.960210Z","applicable_date":"2021-01-27","min_temp":7.2,"max_temp":10.68,"the_temp":10.67,"wind_speed":3.0820011134971765,"wind_direction":248.0,"air_pressure":1011.0,"humidity":76,"visibility":null,"predictability":77},{"id":5325390500331520,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T21:20:12.959919Z","applicable_date":"2021-01-27","min_temp":7.2,"max_temp":10.68,"the_temp":10.67,"wind_speed":3.0820011134971765,"wind_direction":248.0,"air_pressure":1011.0,"humidity":76,"visibility":null,"predictability":77},{"id":4686997030436864,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WNW","created":"2021-01-19T18:20:13.158343Z","applicable_date":"2021-01-27","min_temp":5.71,"max_temp":9.97,"the_temp":8.7,"wind_speed":3.1068559611866697,"wind_direction":285.0,"air_pressure":1002.0,"humidity":81,"visibility":null,"predictability":77},{"id":5260101242847232,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WNW","created":"2021-01-19T15:20:13.507672Z","applicable_date":"2021-01-27","min_temp":5.71,"max_temp":9.97,"the_temp":8.7,"wind_speed":3.1068559611866697,"wind_direction":285.0,"air_pressure":1002.0,"humidity":81,"visibility":null,"predictability":77},{"id":4920842245898240,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-19T12:20:14.358218Z","applicable_date":"2021-01-27","min_temp":6.8,"max_temp":9.64,"the_temp":9.48,"wind_speed":2.2617911397438957,"wind_direction":229.0,"air_pressure":1006.0,"humidity":82,"visibility":null,"predictability":77},{"id":5218661653544960,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-19T09:20:13.561954Z","applicable_date":"2021-01-27","min_temp":6.8,"max_temp":9.64,"the_temp":9.48,"wind_speed":2.2617911397438957,"wind_direction":229.0,"air_pressure":1006.0,"humidity":82,"visibility":null,"predictability":77},{"id":5485991222575104,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T06:20:13.587533Z","applicable_date":"2021-01-27","min_temp":7.4,"max_temp":10.37,"the_temp":10.17,"wind_speed":2.9328720273602165,"wind_direction":255.0,"air_pressure":1009.0,"humidity":81,"visibility":null,"predictability":77},{"id":5249679169159168,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-19T03:20:15.357681Z","applicable_date":"2021-01-27","min_temp":7.4,"max_temp":10.37,"the_temp":10.17,"wind_speed":2.9328720273602165,"wind_direction":255.0,"air_pressure":1009.0,"humidity":81,"visibility":null,"predictability":77},{"id":5624595102040064,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"W","created":"2021-01-19T00:20:14.657080Z","applicable_date":"2021-01-27","min_temp":6.44,"max_temp":9.75,"the_temp":9.75,"wind_speed":5.797393223574326,"wind_direction":281.0,"air_pressure":1006.0,"humidity":62,"visibility":null,"predictability":77}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          PASSED: Retreive weather details for "London" and for any day
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="4">Retreive weather details for "Oxford" and for any day</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>30:00:842</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/search/?query=Oxford
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          <-- Response 200 [{"title":"Oxford","location_type":"City","woeid":31278,"latt_long":"51.756199,-1.259490"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/location/31278/2021/1/28?query=Oxford
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:02 AM</td>
+        <td>
+          <-- Response 200 [{"id":5147877086068736,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T19:14:29.169527Z","applicable_date":"2021-01-28","min_temp":8.91,"max_temp":11.415,"the_temp":11.405000000000001,"wind_speed":13.56305045366791,"wind_direction":228.65376176915748,"air_pressure":998.5,"humidity":86,"visibility":10.514221943847929,"predictability":75},{"id":5165837112573952,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T16:14:30.484348Z","applicable_date":"2021-01-28","min_temp":9.01,"max_temp":11.55,"the_temp":11.475,"wind_speed":14.212004853667914,"wind_direction":236.19006222186167,"air_pressure":999.0,"humidity":85,"visibility":11.84240286725523,"predictability":75},{"id":4673332323549184,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"SW","created":"2021-01-24T13:14:28.483961Z","applicable_date":"2021-01-28","min_temp":9.04,"max_temp":11.25,"the_temp":11.145,"wind_speed":14.43321230597842,"wind_direction":235.53355710748286,"air_pressure":997.0,"humidity":86,"visibility":11.657234251968504,"predictability":75},{"id":5129941302640640,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"WSW","created":"2021-01-24T10:14:28.581141Z","applicable_date":"2021-01-28","min_temp":8.370000000000001,"max_temp":11.41,"the_temp":11.08,"wind_speed":14.489252339311754,"wind_direction":236.8904945006738,"air_pressure":997.0,"humidity":86,"visibility":9.392336256263421,"predictability":75},{"id":5345321698721792,"weather_state_name":"LightRain","weather_state_abbr":"lr","wind_direction_compass":"WSW","created":"2021-01-24T07:14:29.154924Z","applicable_date":"2021-01-28","min_temp":8.89,"max_temp":11.46,"the_temp":11.149999999999999,"wind_speed":14.6868493432249,"wind_direction":248.4981798949471,"air_pressure":998.0,"humidity":84,"visibility":8.838073152787718,"predictability":75},{"id":4572053320499200,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-24T04:14:28.269202Z","applicable_date":"2021-01-28","min_temp":8.87,"max_temp":11.805,"the_temp":11.114999999999998,"wind_speed":15.369741443224902,"wind_direction":250.4989706817107,"air_pressure":998.5,"humidity":83,"visibility":8.645448083194145,"predictability":77},{"id":5115562289004544,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-24T01:14:28.073630Z","applicable_date":"2021-01-28","min_temp":8.245,"max_temp":11.89,"the_temp":8.94,"wind_speed":15.865370436649965,"wind_direction":251.5,"air_pressure":998.0,"humidity":77,"visibility":9.584650640260875,"predictability":77},{"id":4544753434624000,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-23T22:14:32.348572Z","applicable_date":"2021-01-28","min_temp":8.245,"max_temp":11.89,"the_temp":8.94,"wind_speed":15.865370436649965,"wind_direction":251.5,"air_pressure":998.0,"humidity":77,"visibility":9.584650640260875,"predictability":77},{"id":5354155909578752,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-23T19:14:31.242575Z","applicable_date":"2021-01-28","min_temp":8.545,"max_temp":12.125,"the_temp":11.55,"wind_speed":15.321670643442298,"wind_direction":243.99999999999994,"air_pressure":992.0,"humidity":77,"visibility":9.584650640260875,"predictability":77},{"id":6158453782347776,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-23T16:14:32.766660Z","applicable_date":"2021-01-28","min_temp":7.73,"max_temp":11.625,"the_temp":11.55,"wind_speed":12.471670643442296,"wind_direction":242.0,"air_pressure":992.0,"humidity":78,"visibility":9.869238646305575,"predictability":77},{"id":5090322108383232,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-23T13:14:32.359199Z","applicable_date":"2021-01-28","min_temp":6.12,"max_temp":11.405,"the_temp":10.44,"wind_speed":10.974166070150321,"wind_direction":242.0,"air_pressure":989.0,"humidity":83,"visibility":9.869238646305575,"predictability":77},{"id":6438730932944896,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-23T10:14:32.253909Z","applicable_date":"2021-01-28","min_temp":7.495,"max_temp":11.83,"the_temp":10.44,"wind_speed":10.134166070150322,"wind_direction":238.99999999999997,"air_pressure":989.0,"humidity":82,"visibility":9.999726596675416,"predictability":77},{"id":5482283373953024,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"W","created":"2021-01-23T07:14:30.959890Z","applicable_date":"2021-01-28","min_temp":8.155000000000001,"max_temp":11.63,"the_temp":10.32,"wind_speed":11.324091903284817,"wind_direction":260.0,"air_pressure":985.0,"humidity":83,"visibility":9.999726596675416,"predictability":77},{"id":4723008401833984,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"W","created":"2021-01-23T04:14:31.129016Z","applicable_date":"2021-01-28","min_temp":8.18,"max_temp":11.66,"the_temp":10.32,"wind_speed":11.324091903284817,"wind_direction":260.0,"air_pressure":985.0,"humidity":82,"visibility":9.999726596675416,"predictability":77},{"id":6235375019229184,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-23T01:14:31.704614Z","applicable_date":"2021-01-28","min_temp":8.17,"max_temp":11.195,"the_temp":8.74,"wind_speed":11.569533524218564,"wind_direction":244.99999999999997,"air_pressure":994.0,"humidity":81,"visibility":9.999726596675416,"predictability":77},{"id":5031500652216320,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-22T22:14:34.657009Z","applicable_date":"2021-01-28","min_temp":8.17,"max_temp":11.195,"the_temp":8.74,"wind_speed":11.569533524218564,"wind_direction":244.99999999999997,"air_pressure":994.0,"humidity":81,"visibility":9.999726596675416,"predictability":77},{"id":5252865766457344,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T19:14:35.361135Z","applicable_date":"2021-01-28","min_temp":7.879999999999999,"max_temp":11.815,"the_temp":11.02,"wind_speed":9.587359420981468,"wind_direction":230.5,"air_pressure":1003.0,"humidity":83,"visibility":9.999726596675416,"predictability":77},{"id":6559846192119808,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-22T16:14:36.460778Z","applicable_date":"2021-01-28","min_temp":7.68,"max_temp":12.0,"the_temp":11.02,"wind_speed":8.677359420981468,"wind_direction":224.0,"air_pressure":1003.0,"humidity":83,"visibility":9.999726596675416,"predictability":77},{"id":4906519603707904,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-22T13:14:36.561372Z","applicable_date":"2021-01-28","min_temp":7.765000000000001,"max_temp":12.190000000000001,"the_temp":8.81,"wind_speed":10.13136801081683,"wind_direction":249.5,"air_pressure":1004.0,"humidity":76,"visibility":9.999726596675416,"predictability":77},{"id":6607368528855040,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-22T10:14:34.658733Z","applicable_date":"2021-01-28","min_temp":7.875,"max_temp":12.215,"the_temp":8.81,"wind_speed":12.441368010816829,"wind_direction":255.0,"air_pressure":1004.0,"humidity":76,"visibility":9.999726596675416,"predictability":77},{"id":5486689557413888,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-22T07:14:34.179224Z","applicable_date":"2021-01-28","min_temp":7.875,"max_temp":12.215,"the_temp":8.81,"wind_speed":12.441368010816829,"wind_direction":255.0,"air_pressure":1004.0,"humidity":76,"visibility":9.999726596675416,"predictability":77},{"id":5152356065869824,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-22T04:14:34.372182Z","applicable_date":"2021-01-28","min_temp":7.800000000000001,"max_temp":12.09,"the_temp":8.81,"wind_speed":12.441368010816829,"wind_direction":255.0,"air_pressure":1004.0,"humidity":75,"visibility":9.999726596675416,"predictability":77},{"id":5298537374941184,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-22T01:14:36.450204Z","applicable_date":"2021-01-28","min_temp":7.800000000000001,"max_temp":12.09,"the_temp":8.81,"wind_speed":12.441368010816829,"wind_direction":255.0,"air_pressure":1004.0,"humidity":75,"visibility":9.999726596675416,"predictability":77},{"id":4802518581248000,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-21T22:14:38.853949Z","applicable_date":"2021-01-28","min_temp":7.800000000000001,"max_temp":12.09,"the_temp":8.81,"wind_speed":12.441368010816829,"wind_direction":255.0,"air_pressure":1004.0,"humidity":75,"visibility":9.999726596675416,"predictability":77},{"id":5566276442259456,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-21T19:14:38.248272Z","applicable_date":"2021-01-28","min_temp":7.800000000000001,"max_temp":12.09,"the_temp":8.81,"wind_speed":12.441368010816829,"wind_direction":255.0,"air_pressure":1004.0,"humidity":75,"visibility":9.999726596675416,"predictability":77},{"id":5361946980253696,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"WSW","created":"2021-01-21T16:14:37.257417Z","applicable_date":"2021-01-28","min_temp":6.005,"max_temp":11.515,"the_temp":8.81,"wind_speed":9.736368010816829,"wind_direction":248.5,"air_pressure":1004.0,"humidity":76,"visibility":9.999726596675416,"predictability":77},{"id":5758478174912512,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"SW","created":"2021-01-21T13:14:37.581428Z","applicable_date":"2021-01-28","min_temp":4.415,"max_temp":10.785,"the_temp":7.41,"wind_speed":7.816331026803468,"wind_direction":223.5,"air_pressure":1014.0,"humidity":79,"visibility":9.999726596675416,"predictability":73},{"id":5661153863663616,"weather_state_name":"Showers","weather_state_abbr":"s","wind_direction_compass":"S","created":"2021-01-21T10:14:36.877996Z","applicable_date":"2021-01-28","min_temp":3.51,"max_temp":9.05,"the_temp":7.41,"wind_speed":6.176331026803468,"wind_direction":181.49999999999997,"air_pressure":1014.0,"humidity":89,"visibility":9.383947745168218,"predictability":73},{"id":5671729163665408,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"S","created":"2021-01-21T07:14:37.007992Z","applicable_date":"2021-01-28","min_temp":3.645,"max_temp":9.254999999999999,"the_temp":8.65,"wind_speed":6.720030820011135,"wind_direction":173.5,"air_pressure":1006.0,"humidity":95,"visibility":9.383947745168218,"predictability":77},{"id":6022349422854144,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-21T04:14:37.471598Z","applicable_date":"2021-01-28","min_temp":3.73,"max_temp":10.35,"the_temp":8.65,"wind_speed":3.2000616400222697,"wind_direction":207.0,"air_pressure":1006.0,"humidity":92,"visibility":null,"predictability":77},{"id":6511756047286272,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-21T01:14:37.762054Z","applicable_date":"2021-01-28","min_temp":7.26,"max_temp":11.31,"the_temp":8.51,"wind_speed":4.107263580688778,"wind_direction":192.99999999999997,"air_pressure":1004.0,"humidity":88,"visibility":null,"predictability":77},{"id":4884936772288512,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T22:14:40.554215Z","applicable_date":"2021-01-28","min_temp":7.26,"max_temp":11.31,"the_temp":8.51,"wind_speed":4.107263580688778,"wind_direction":192.99999999999997,"air_pressure":1004.0,"humidity":88,"visibility":null,"predictability":77},{"id":6450373834309632,"weather_state_name":"HeavyCloud","weather_state_abbr":"hc","wind_direction_compass":"WSW","created":"2021-01-20T19:14:40.279014Z","applicable_date":"2021-01-28","min_temp":3.54,"max_temp":10.88,"the_temp":10.52,"wind_speed":3.9270659349399506,"wind_direction":238.0,"air_pressure":1012.0,"humidity":89,"visibility":null,"predictability":71},{"id":4976767283494912,"weather_state_name":"HeavyCloud","weather_state_abbr":"hc","wind_direction_compass":"WSW","created":"2021-01-20T16:14:40.659579Z","applicable_date":"2021-01-28","min_temp":3.54,"max_temp":10.88,"the_temp":10.52,"wind_speed":3.9270659349399506,"wind_direction":238.0,"air_pressure":1012.0,"humidity":89,"visibility":null,"predictability":71},{"id":4873986837053440,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-20T13:14:41.657195Z","applicable_date":"2021-01-28","min_temp":5.66,"max_temp":9.78,"the_temp":8.41,"wind_speed":3.566670643442297,"wind_direction":234.99999999999994,"air_pressure":1002.0,"humidity":84,"visibility":null,"predictability":77},{"id":4549481304424448,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SW","created":"2021-01-20T10:14:40.649597Z","applicable_date":"2021-01-28","min_temp":5.66,"max_temp":9.78,"the_temp":8.41,"wind_speed":3.566670643442297,"wind_direction":234.99999999999994,"air_pressure":1002.0,"humidity":84,"visibility":null,"predictability":77},{"id":5008483251388416,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T07:14:39.899717Z","applicable_date":"2021-01-28","min_temp":5.89,"max_temp":10.96,"the_temp":8.97,"wind_speed":4.03891274954267,"wind_direction":195.99999999999997,"air_pressure":1006.0,"humidity":91,"visibility":null,"predictability":77},{"id":5720088331157504,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"SSW","created":"2021-01-20T04:14:40.260115Z","applicable_date":"2021-01-28","min_temp":5.89,"max_temp":10.96,"the_temp":8.97,"wind_speed":4.03891274954267,"wind_direction":195.99999999999997,"air_pressure":1006.0,"humidity":91,"visibility":null,"predictability":77},{"id":6661286944309248,"weather_state_name":"HeavyRain","weather_state_abbr":"hr","wind_direction_compass":"NNE","created":"2021-01-20T01:14:41.076972Z","applicable_date":"2021-01-28","min_temp":2.77,"max_temp":9.19,"the_temp":8.01,"wind_speed":6.971784776902887,"wind_direction":25.0,"air_pressure":994.0,"humidity":86,"visibility":null,"predictability":77}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          PASSED: Retreive weather details for "Oxford" and for any day
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">VerifyPlaceID.feature</p>
+            <p class="text-sm">
+              <span>02:14:03 AM</span> / <span>30:00:729</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">VerifyPlaceID.feature</h5>
+<span class='badge badge-success'>01.25.2021 02:14:03</span>
+<span class='badge badge-danger'>01.25.2021 02:14:03</span>
+<span class='badge badge-default'>30:00:729</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+</div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="6">Verify the duplicacy of PlaceID for "Birmingham"</div>
+            <div class="node-status float-right"><span class="badge fail-bg log ">Fail</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>30:00:486</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/search/?query=Birmingham
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          <-- Response 200 [{"title":"Birmingham","location_type":"City","woeid":12723,"latt_long":"52.478630,-1.908450"},{"title":"Birmingham","location_type":"City","woeid":2364559,"latt_long":"33.520290,-86.811501"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          FAILED: Verify the duplicacy of PlaceID for "Birmingham"
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          expected [true] but found [false]
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="node" id="7">Verify the duplicacy of PlaceID for "Nottingham"</div>
+            <div class="node-status float-right"><span class="badge pass-bg log ">Pass</span></div>
+            <div class="node-time">
+              <span class='badge badge-default'>30:00:207</span>
+            </div>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          -->  Request GET https://www.metaweather.com/api/location/search/?query=Nottingham
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          <-- Response 200 [{"title":"Nottingham","location_type":"City","woeid":30720,"latt_long":"52.949219,-1.143920"}]
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:14:03 AM</td>
+        <td>
+          PASSED: Verify the duplicacy of PlaceID for "Nottingham"
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 25, 2021 02:13:56 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 25, 2021 02:14:03 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'><b>4</b> steps passed</small></div>
+<div>
+<small data-tooltip='20%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='18%'><b>4</b> events passed</small></div>
+<div>
+<small data-tooltip='9%'><b>2</b> events failed,
+<b data-tooltip='%'>16</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"GetWeatherDetails.feature":5.452,"VerifyPlaceID.feature":0.729
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 4,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 4,
+failEvents: 2,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 16
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,6 @@
+2021-01-25 01:52:30.906 [INFO ] [main] ListenerPlugin - Test run started at: 2021-01-25T01:52:30.902095500
+2021-01-25 01:52:31.149 [INFO ] [main] ListenerPlugin - Test case started: Retreive weather details for any Place and for any day
+2021-01-25 01:52:31.188 [INFO ] [main] ListenerPlugin - Test case started: Retreive weather details for any Place and for any day
+2021-01-25 01:52:31.219 [INFO ] [main] ListenerPlugin - Test case started: Retreive weather details for any Place and for any day
+2021-01-25 01:52:31.241 [INFO ] [main] ListenerPlugin - Test case started: Verify the duplicacy of "WEOID" for any Place
+2021-01-25 01:52:31.268 [INFO ] [main] ListenerPlugin - Test case started: Verify the duplicacy of "WEOID" for any Place

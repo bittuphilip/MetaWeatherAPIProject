@@ -1,0 +1,4 @@
+stepdefinitions\VerifyPlaceID.class
+AppHooks\ApplicationHooks.class
+testRunner\testRunner.class
+stepdefinitions\GetWeatherDetails.class
