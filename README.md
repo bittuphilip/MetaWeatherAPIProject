@@ -17,15 +17,15 @@ Selenium WebDriver
 ### Requirements
 #### In order to utilise this project you need to have the following installed locally:
 
-1.Maven latest version
-2.Java JDK1.8 or later version
+   * Maven latest version
+   * Java JDK1.8 or later version
 
 
 ### Execution/Usage Steps:
 
-1. Download and Unzip to a Local machine folder.
-2. Open Command Prompt as administrator Change directory to the folder containing the framework
-3. Type "mvn clean verify" / "mvn clean install"
+ * Download and Unzip to a Local machine folder.
+ * Open Command Prompt as administrator Change directory to the folder containing the framework
+ * Type "mvn clean verify" / "mvn clean install"
 
 
 ### Framework Structure:
@@ -81,7 +81,8 @@ Selenium WebDriver
 * Q1: Explain why you chose to use those particular frameworks in the technical challenge?
 	Ans: I have used BDD framework because it follows BDD approach. 
 
-	1. Since we are using feature file which helps in the parametrization of data so we dont require the excel to pass our data.It helps in the optimization and clarity of the 		code.
+	1. Since we are using feature file which helps in the parametrization of data so we dont require the excel to pass our data.
+	   It helps in the optimization and clarity of the code.
 	2. In BDD Approach we are writing test cases using Gherkin language which is understandable by all non-technical person also.
 
 
