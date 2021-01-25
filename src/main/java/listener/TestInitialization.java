@@ -1,4 +1,4 @@
-package ReportUtils;
+package listener;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import DriverManager.SeleniumDriverManager;
+
 import io.restassured.RestAssured;
 import io.restassured.internal.RestAssuredResponseImpl;
 import io.restassured.response.Response;
@@ -32,13 +32,9 @@ public class TestInitialization {
 	                String userDir = System.getProperty("user.dir");
 
 	                TestConfiguration.readRunProperties(Paths.get(userDir, "src/main/java/resources/global.properties"));
-//	                String env = TestConfiguration.getEnv();
+	                
 	                TestConfiguration.readConfig(Paths.get(userDir, "src/main/java/resources/global.properties"));
 
-	                TestReport.init();
-	                TestReport testReport = new TestReport();
-
-	                SeleniumDriverManager.setChromeDriverPath(Paths.get(userDir, "drivers", SeleniumDriverManager.getChromeDriverName()));
 
 	                RestAssured.filters((request, response, filterContext) -> {
 	                    //request logging
@@ -50,8 +46,7 @@ public class TestInitialization {
 
 //	                    LOG.info(requestMsg);
 //	                    LOG.info(responseMsg);
-	                    testReport.log(requestMsg);
-	                    testReport.log(responseMsg);
+	                
 
 	                    return next;
 	                });

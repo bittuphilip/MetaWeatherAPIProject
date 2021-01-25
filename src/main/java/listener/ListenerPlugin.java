@@ -1,14 +1,10 @@
 package listener;
 
-import DriverManager.SeleniumDriverManager;
+
 import io.cucumber.plugin.ConcurrentEventListener;
 import io.cucumber.plugin.event.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import ReportUtils.TestInitialization;
-import ReportUtils.TestReport;
 
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
@@ -17,7 +13,7 @@ import java.util.List;
 public class ListenerPlugin implements ConcurrentEventListener {
 
 	private static final Logger LOG = LogManager.getLogger(ListenerPlugin.class);
-	private static final TestReport testReport = new TestReport();
+	
 
 	public void onTestRunStarted(TestRunStarted testRunStarted) {
 		TestInitialization.init();
@@ -27,57 +23,43 @@ public class ListenerPlugin implements ConcurrentEventListener {
 	public void onTestCaseStarted(TestCaseStarted testCaseStarted) {
 		String testClass = Paths.get(testCaseStarted.getTestCase().getUri()).getFileName().toString();
 		String testName = testCaseStarted.getTestCase().getName();
-		LOG.info(String.format("Test case started: %s", testName));
-		testReport.createTest(testClass, testName);
+		LOG.info(String.format("Test case started: %s", testClass,testName));
+		
 	}
 
 	public void onTestCaseFinished(TestCaseFinished testCaseFinished) {
-		LOG.info(String.format("Test case %s finished", testCaseFinished.getTestCase().getName()));
+		LOG.info(String.format("Test case %s finished", testCaseFinished.getTestCase().getName().toString()));
 	}
 
 	public void onTestRunFinished(TestRunFinished testRunFinished) {
-		SeleniumDriverManager.closeAllDrivers();
-		TestReport.closeThreadLocalCollections();
+		LOG.info(String.format("Test Run %s finished", testRunFinished.getResult().getStatus().toString()));
+
 	}
 
 	public void onTestStepFinished(TestStepFinished testStepFinished) {
 		List<String> tags = testStepFinished.getTestCase().getTags();
-		if (tags.contains("@web")) {
-			RemoteWebDriver driver = SeleniumDriverManager.getCurrentDriver();
-			if (driver != null && driver.getSessionId() != null) {
-				testReport.log(testStepFinished.getTestStep().getCodeLocation());
-				testReport.logImage(SeleniumDriverManager.getCurrentDriver().getScreenshotAs(OutputType.BASE64));
-			}
-		}
+		LOG.info(String.format("Test Step %s finished", testStepFinished.getTestStep().getCodeLocation().toString()));
+		
 	}
 
 	public void onPassedTest(TestCaseFinished testCaseFinished) {
-		String testName = testCaseFinished.getTestCase().getName();
-		LOG.info(String.format("Pass test %s", testName));
-		testReport.pass(testName);
+		String testName = testCaseFinished.getTestCase().getName().toString();
+		String reason = testCaseFinished.getResult().getStatus().toString();
+		LOG.info(String.format("Pass test %s", testName + reason));
+//		
 	}
 
 	public void onSkippedTest(TestCaseFinished testCaseFinished) {
 		String testName = testCaseFinished.getTestCase().getName();
 		String reason = testCaseFinished.getResult().getError().getMessage();
-		LOG.info(String.format("Skip test %s", testName));
-		testReport.skip(testName, reason);
+		LOG.info(String.format("Skip test %s", testName + reason));
+		
 	}
 
 	public void onFailedTest(TestCaseFinished testCaseFinished) {
 		String testName = testCaseFinished.getTestCase().getName();
 		String reason = testCaseFinished.getResult().getError().getMessage();
-		LOG.info(String.format("Failed test %s", testName));
-		List<String> tags = testCaseFinished.getTestCase().getTags();
-		for (String tag : tags) {
-			if (tag.toLowerCase().startsWith("@xfail")) {
-
-				testReport.xfail(testName, reason);
-				return;
-			}
-		}
-
-		testReport.fail(testName, reason);
+		LOG.info(String.format("Failed test %s", testName + reason));
 	}
 
 	@Override

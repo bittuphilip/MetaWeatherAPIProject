@@ -1,6 +1,6 @@
 Feature: Validate if PlaceID is returned multiple times for any Place
 
-@PlaceId
+@Placeid
   Scenario Outline: Verify the duplicacy of PlaceID for "<Place>"
     Given User has the "<Place>" place name
     When User calls "GetPlaceAPI" resource url with "GET" http request

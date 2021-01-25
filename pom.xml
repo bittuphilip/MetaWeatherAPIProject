@@ -146,7 +146,6 @@
 			<version>${cucumber.version}</version>
 			<type>pom</type>
 		</dependency>
-
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
 			<artifactId>extentreports-cucumber6-adapter</artifactId>

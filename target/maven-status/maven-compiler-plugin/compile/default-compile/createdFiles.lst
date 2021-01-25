@@ -1,9 +1,7 @@
-ReportUtils\TestConfiguration.class
 weatherPojoClasses\GetWeather.class
+listener\TestInitialization.class
 resources\APIResources.class
-ReportUtils\TestReport.class
-ReportUtils\TestInitialization.class
+listener\TestConfiguration.class
 resources\Utils.class
-DriverManager\SeleniumDriverManager.class
 listener\ListenerPlugin$1.class
 listener\ListenerPlugin.class

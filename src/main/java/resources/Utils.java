@@ -10,7 +10,6 @@ import java.io.PrintStream;
 import java.util.List;
 import java.util.Properties;
 
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
@@ -23,8 +22,8 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 	
-	private  RequestSpecification req;
-	private  RequestSpecification postReqSpec;
+	public RequestSpecification req;
+	private RequestSpecification postReqSpec;
 	private static Response response;
 	
 	/*
@@ -33,21 +32,20 @@ public class Utils {
 	public RequestSpecification placeRequestSpecification(String PlaceName) throws FileNotFoundException
 	{
 		
-//		if(req==null)
-//		{
-		PrintStream log = new PrintStream(new FileOutputStream("WeatherAPIlogs.text"));	
-		
+		if(req == null)
+		{
+		PrintStream log = new PrintStream(new FileOutputStream("APITestlogs.text"));	
 		req =new RequestSpecBuilder().setBaseUri(getGlobalVar("baseURL")).addQueryParam("query", PlaceName)
 				.addFilter(RequestLoggingFilter.logRequestTo(log))
 				.addFilter(ResponseLoggingFilter.logResponseTo(log))
 				.setContentType(ContentType.JSON).build();
 		
 		return req;
-//		}
-//		return req;
+		}
+		return req;
+		
 		
 	}
-	
 	
 	
 	/*
