@@ -6,19 +6,19 @@ This Framework helps to automate the Meta Weather API using BDD aaproach
 ## Part One: 
 
 ### Tools:
-
-Maven
-Cucumber-JVM
-TestNG
-RestAssured
-Selenium WebDriver
+ 
+ * Maven
+ * Cucumber-JVM
+ * TestNG
+ * RestAssured
+ * Selenium WebDriver
 
 
 ### Requirements
 #### In order to utilise this project you need to have the following installed locally:
 
-   * Maven latest version
-   * Java JDK1.8 or later version
+  * Maven latest version
+  * Java JDK1.8 or later version
 
 
 ### Execution/Usage Steps:
