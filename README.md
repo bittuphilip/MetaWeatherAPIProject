@@ -1,6 +1,6 @@
 # MetaWeatherAPIProject
 
-Framework helps to automate the Meta Weather API using BDD aaproach
+This Framework helps to automate the Meta Weather API using BDD aaproach
 
 
 ## Part One: 
