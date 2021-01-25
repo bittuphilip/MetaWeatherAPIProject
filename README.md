@@ -4,7 +4,7 @@ Framework helps to automate the Meta Weather API using BDD aaproach
 
 
 
-######Part One: 
+## Part One: 
 
 ### Tools:
 
@@ -16,7 +16,7 @@ Selenium WebDriver
 
 
 ### Requirements
-# In order to utilise this project you need to have the following installed locally:
+#### In order to utilise this project you need to have the following installed locally:
 
 1.Maven latest version
 2.Java JDK1.8 or later version
