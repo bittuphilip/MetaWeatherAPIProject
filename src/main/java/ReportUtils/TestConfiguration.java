@@ -43,7 +43,5 @@ public class TestConfiguration {
         return host;
     }
 
-    public static String getEnv() {
-        return baseURL;
-    }
+   
 }

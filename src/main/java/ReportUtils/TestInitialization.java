@@ -58,7 +58,7 @@ public class TestInitialization {
 
 	                isInit = true;
 	            } catch (IOException ex) {
-	                throw new RuntimeException(ex);
+	                throw new RuntimeException(ex);	
 	            }
 	        }
 	    }

@@ -9,4 +9,4 @@ Feature: Validate if PlaceID is returned multiple times for any Place
     Examples: 
       | Place      |
       | Birmingham |
-      | Nottingham |
+      | Swindon |

@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-25T02:13:55 IST" name="Surefire suite" finished-at="2021-01-25T02:14:04 IST" duration-ms="8741">
+  <suite started-at="2021-01-25T04:49:33 IST" name="Surefire suite" finished-at="2021-01-25T04:49:41 IST" duration-ms="8119">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-01-25T02:13:55 IST" name="Surefire test" finished-at="2021-01-25T02:14:04 IST" duration-ms="8741">
+    <test started-at="2021-01-25T04:49:33 IST" name="Surefire test" finished-at="2021-01-25T04:49:41 IST" duration-ms="8119">
       <class name="testRunner.testRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:13:55 IST" name="setUpClass" finished-at="2021-01-25T02:13:57 IST" duration-ms="1816" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:33 IST" name="setUpClass" finished-at="2021-01-25T04:49:35 IST" duration-ms="1653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:13:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T02:14:01 IST" duration-ms="3766" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T04:49:39 IST" duration-ms="3917" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:14:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T02:14:02 IST" duration-ms="979" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T04:49:40 IST" duration-ms="860" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:14:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T02:14:03 IST" duration-ms="869" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T04:49:40 IST" duration-ms="744" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:14:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T02:14:03 IST" duration-ms="510" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T04:49:41 IST" duration-ms="207" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -93,11 +93,11 @@ at ✽.Verify "WEOID" count is Equal to 1 for the given place(file:///C:/BDD_Wor
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:14:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T02:14:03 IST" duration-ms="241" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T04:49:41 IST" duration-ms="194" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify the duplicacy of PlaceID for "Nottingham""]]>
+                <![CDATA["Verify the duplicacy of PlaceID for "Swindon""]]>
               </value>
             </param>
             <param index="1">
@@ -109,7 +109,7 @@ at ✽.Verify "WEOID" count is Equal to 1 for the given place(file:///C:/BDD_Wor
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T02:14:03 IST" name="tearDownClass" finished-at="2021-01-25T02:14:04 IST" duration-ms="504" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.testRunner@55040f2f]" started-at="2021-01-25T04:49:41 IST" name="tearDownClass" finished-at="2021-01-25T04:49:41 IST" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
