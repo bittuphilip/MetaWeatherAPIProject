@@ -79,6 +79,7 @@ This Framework helps to automate the Meta Weather API using BDD aaproach
 ## Part Two:
 
 * Q1: Explain why you chose to use those particular frameworks in the technical challenge?
+
   Ans: I have used BDD framework because it follows BDD approach. 
 
 	1. Since we are using feature file which helps in the parametrization of data so we dont require the excel to pass our data.
@@ -90,6 +91,7 @@ This Framework helps to automate the Meta Weather API using BDD aaproach
 
 
 * Q2: What questions would you ask your Product Owner / what information would you need to know, to be able to test the whole MetaWeather API service comprehensively?
+
   Ans: I would like to get the information from the Product Owner mentioned below:
 
 	1. How many character of the place name user need to pass in the API url(https://www.metaweather.com/api/location/search/?query=london)
@@ -105,6 +107,7 @@ This Framework helps to automate the Meta Weather API using BDD aaproach
 
 
 * Q3: After completing the technical challenge, what would you do differently if you were asked to do the same challenge again?
+
   Ans: If i get the challenge again I can add more positive and negative features in this framework.
 
 
