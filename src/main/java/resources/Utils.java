@@ -34,10 +34,10 @@ public class Utils {
 		
 		if(req == null)
 		{
-		PrintStream log = new PrintStream(new FileOutputStream("APITestlogs.text"));	
+//		PrintStream log = new PrintStream(new FileOutputStream("APITestlogs.text"));
 		req =new RequestSpecBuilder().setBaseUri(getGlobalVar("baseURL")).addQueryParam("query", PlaceName)
-				.addFilter(RequestLoggingFilter.logRequestTo(log))
-				.addFilter(ResponseLoggingFilter.logResponseTo(log))
+//				.addFilter(RequestLoggingFilter.logRequestTo(log))
+//				.addFilter(ResponseLoggingFilter.logResponseTo(log))
 				.setContentType(ContentType.JSON).build();
 		
 		return req;
